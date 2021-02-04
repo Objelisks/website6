@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>objelisks.garden</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main: #9DCB61;
+            --shade: #84b642;
+            --light: #ddedaf;
+        }
+
+        body {
+            background-color: var(--main);
+            color: var(--light);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 13pt;
+            display: grid;
+            grid: auto-flow / 1fr;
+        }
+
+        h1 {
+            font-family: 'Ibarra Real Nova', serif;
+            font-size: 72pt;
+        }
+
+        img {
+            object-fit: contain;
+        }
+
+        header {
+            display: flex;
+            white-space: nowrap;
+            margin-left: 6rem;
+        }
+
+        header address {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #addr1 {
+            position: absolute;
+            top: 10.5rem;
+            left: 18rem;
+        }
+
+        #addr2 {
+            position: absolute;
+            top: 10.5rem;
+            left: 40rem;
+        }
+
+        address {
+            margin-left: 2rem;
+        }
+
+        section {
+            margin-left: 5rem;
+        }
+
+        .projects {
+            display: grid;
+            grid: auto-flow dense / repeat(auto-fill, 27rem);
+            gap: 2rem;
+        }
+
+        .projects h2 {
+            font-family: 'Ibarra Real Nova', serif;
+            font-size: 24pt;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .projects article {
+            display: grid;
+            padding: 1rem;
+            width: 25rem;
+            background-color: var(--shade);
+            box-shadow: 3px 3px 6px var(--shade);
+            border-radius: 36px;
+        }
+
+        .projects article a {
+            width: 25rem;
+        }
+
+        .projects article p {
+            width: 25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Objelisks' Garden</h1>
+        <address>
+            <span id="addr1">mastodon: <a href="https://friend.camp/@objelisks">@objelisks@friend.camp</a></span>
+            <span id="addr2">email: <a href="mailto:objelisks@gmail.com">objelisks@gmail.com</a></span>
+        </address>
+    </header>
+    <section class="projects">
+        <article>
+            <h2>Trains Game</h2>
+            <a href="http://trainsga.me">
+                <img src="./images/trainsgame.png" width="400" height="200" />
+                trainsga.me
+            </a>
+            <p>
+                Trains game is a web toy for making trains go. You can make them go left, or right, and also through a
+                tunnel.
+            </p>
+        </article>
+        <article>
+            <h2>Picramp</h2>
+            <a href="https://github.com/Objelisks/picramp">
+                <img src="./images/picramp.png" width="400" height="200" />
+                github
+            </a>
+            <p>
+                Picramp is an image hosting website specifically designed for a small community.
+            </p>
+        </article>
+        <article>
+            <h2>Wildflowersbot</h2>
+            <a href="https://botsin.space/@wildflowersbot">
+                <img src="./images/wildflower.png" width="400" height="200" />
+                mastodon
+            </a>
+            <p>
+                Wildflowersbot is an art bot that generates colorful, healing landscapes every hour.
+            </p>
+        </article>
+        <article>
+            <h2>LSystembot</h2>
+            <a href="https://twitter.com/lsystembot">
+                <img src="./images/lsystembot.png" width="400" height="200" />
+                twitter
+            </a>
+            <p>
+                LSystembot is an art bot that unfolds fractal-like instructions into complex patterns.
+            </p>
+        </article>
+        <article>
+            <h2>Resistance</h2>
+            <a href="https://github.com/Objelisks/resistance">
+                <img src="./images/resistance.png" width="400" height="200" />
+                github
+            </a>
+            <p>
+                Resistance is a tech demo remake of The Resistance board game.
+                It features cryptographically secure peer-to-peer multiplayer.
+            </p>
+        </article>
+    </section>
+</body>
+
+</html>
